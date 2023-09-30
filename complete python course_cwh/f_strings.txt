@@ -1,0 +1,40 @@
+F-strings, also known as "formatted string literals," are a way to create strings in Python that include expressions inside curly braces `{}`. These expressions are evaluated at runtime and their values are inserted into the string. F-strings were introduced in Python 3.6 and have become a popular way to format strings due to their simplicity and readability.
+
+Here's the basic syntax for creating an f-string:
+
+```python
+variable = 42
+name = "Alice"
+formatted_string = f"My favorite number is {variable} and my name is {name}."
+```
+
+In the example above, the `formatted_string` will contain the values of `variable` and `name` inserted into the string. When you print `formatted_string`, you'll get the following output:
+
+```
+"My favorite number is 42 and my name is Alice."
+```
+
+F-strings support various expressions and formatting options within the curly braces:
+
+1. **Variables**: You can directly insert the values of variables into the string.
+
+2. **Expressions**: You can include Python expressions inside the curly braces, and the result of the expression will be inserted into the string. For example: `f"The result is {2 + 3}"` will result in `"The result is 5"`.
+
+3. **Formatting**: You can apply formatting to the expressions inside f-strings. For example, you can control the number of decimal places for a floating-point number: `f"Value: {value:.2f}"` will format `value` to two decimal places.
+
+4. **Function Calls**: You can call functions and methods within f-strings to include their return values in the string.
+
+Here are a few examples of f-string usage:
+
+```python
+name = "Bob"
+age = 30
+formatted_string = f"Hello, my name is {name.upper()} and I am {age} years old."
+print(formatted_string)  # "Hello, my name is BOB and I am 30 years old."
+
+pi = 3.141592653589793
+formatted_pi = f"The value of pi is approximately {pi:.2f}."
+print(formatted_pi)  # "The value of pi is approximately 3.14."
+```
+
+F-strings offer a concise and readable way to create formatted strings in Python, making code more expressive and easier to maintain.
